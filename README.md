@@ -55,6 +55,8 @@ const styles = {
 
 ```
 
+> Please note that I moved the original `class component` to a separate file for reference and refactor it into `functional component` using hooks.
+
 # Setup
 
 Clone the repository, install the dependencies and run
