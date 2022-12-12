@@ -1,53 +1,44 @@
 import React from 'react';
 import './Marquee.css'
 
-class Marquee extends React.Component {
+const Marquee = ({ children }) => {
 
-    constructor(props) {
+    const container = React.useRef()
+    const marquee = React.useRef()
 
-        super(props)
+    const [left, setLeft] = React.useState(0)
 
-        this.state = {
-            left: 0,
-        }
-
-    }
-
-    componentDidMount() {
-        this.interval = setInterval(() => {
-            this.setState(state => {
-                let { left } = state;
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setLeft((prev) => {
+                let left = prev;
                 left--;
-                if (left < -this.marquee.clientWidth) {
-                    left = this.container.clientWidth;
+                if (left < -marquee.current.clientWidth) {
+                    left = container.current.clientWidth;
                 }
-                return { left };
-            });
-        }, 30);
-    }
+                return left
+            })
+        }, 30)
 
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
+        return () => clearInterval(interval)
+    }, [])
 
-    render() {
-        return (
+    return (
+        <div
+            ref={container}
+            className="marquee-container"
+        >
             <div
-                ref={node => (this.container = node)}
-                className="marquee-container"
+            ref={marquee}
+            className="marquee"
+            style={{ 
+                left: `${left}px`,
+            }}
             >
-                <div
-                ref={node => (this.marquee = node)}
-                className="marquee"
-                style={{ 
-                    left: `${this.state.left}px`,
-                }}
-                >
-                {this.props.children}
-                </div>
+            {children}
             </div>
-        );
-    }
+        </div>
+    )
 }
 
 export default Marquee
