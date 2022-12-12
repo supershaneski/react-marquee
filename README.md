@@ -2,7 +2,7 @@ react-marquee
 ==========
 
 This is a sample `Marquee` component that can be used in React project.
-The code is the result from asking `OpenAI` [ChatGPT](https://openai.com/blog/chatgpt/) to make a `marquee` component.
+The code is based from the result from asking `OpenAI` [ChatGPT](https://openai.com/blog/chatgpt/) to make a `marquee` component.
 
 In the early days of the web, there is a `<marquee>` HTML element that is used to display scrolling text like in neon signs. Well, let's bring back the good ole days.
 
