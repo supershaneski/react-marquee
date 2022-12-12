@@ -14,28 +14,46 @@ This is basically an exercise not of `React` but possible usage of `ChatGPT`.
 I personally do not share some people's apprehension about it.
 I think it complements the work of the programmer to be more efficient and productive and it is nice to have in one's toolbox.
 
-As the exchange shown below illustrates, in order for the user to use `ChatGPT` effectively, specially in relation to code generated, they should have a firm grasp of the basics so that they can pinpoint errors and make appropriate adjustments, if necessary.
+As the exchange shown below illustrates, in order for the user to use `ChatGPT` effectively, specially in relation to code generated, they should have a foundational knowledge so that they can pinpoint errors and make appropriate adjustments, if necessary.
 
 I share the exchanges with `ChatGPT` below:
 
-![screenshot 1](./docs/screenshot1.png "screenshot 1")
+![screenshot 1](./docs/screenshot4.png "screenshot 1")
 
-![screenshot 2](./docs/screenshot2.png "screenshot 21")
+![screenshot 2](./docs/screenshot5.png "screenshot 2")
 
-![screenshot 3](./docs/screenshot3.png "screenshot 3")
+![screenshot 3](./docs/screenshot6.png "screenshot 3")
 
-![screenshot 4](./docs/screenshot4.png "screenshot 4")
+![screenshot 4](./docs/screenshot7.png "screenshot 4")
 
-![screenshot 5](./docs/screenshot5.png "screenshot 5")
+![screenshot 5](./docs/screenshot8.png "screenshot 5")
 
-![screenshot 6](./docs/screenshot6.png "screenshot 6")
+![screenshot 6](./docs/screenshot9.png "screenshot 6")
 
-![screenshot 7](./docs/screenshot7.png "screenshot 7")
+# Usage
 
-![screenshot 8](./docs/screenshot8.png "screenshot 8")
+It is important that the container of the `Marquee` component has `width`, `height` and `overflow` set to `hidden`.
 
-![screenshot 9](./docs/screenshot9.png "screenshot 9")
+```javascript
+import Marquee from './components/Marquee'
 
+const Container = () => {
+    return (
+        <div style={styles.container}>
+            <Marquee>Hello, world</Marquee>
+        </div>
+    )
+}
+
+const styles = {
+    container: {
+        width: '500px',
+        height: '20px',
+        overflow: 'hidden'
+    }
+}
+
+```
 
 # Setup
 
