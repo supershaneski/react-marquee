@@ -10,11 +10,31 @@ Please use responsively :)
 
 # Motivation
 
-This is basically an exercise not of `React` but using `ChatGPT` effectively.
-I do not share some people's apprehension about it.
-I think it complements the work of the programmer to be more efficient and productive.
-As the exchange shown below illustrates, in order for the user to use `ChatGPT` effectively specially in relation to code generated, they should have a firm grasp of the basics so that they can pinpoint errors and make appropriate adjustments.
+This is basically an exercise not of `React` but possible usage of `ChatGPT`.
+I personally do not share some people's apprehension about it.
+I think it complements the work of the programmer to be more efficient and productive and it is nice to have in one's toolbox.
 
+As the exchange shown below illustrates, in order for the user to use `ChatGPT` effectively, specially in relation to code generated, they should have a firm grasp of the basics so that they can pinpoint errors and make appropriate adjustments, if necessary.
+
+I share the exchanges with `ChatGPT` below:
+
+![screenshot 1](./docs/screenshot1.png "screenshot 1")
+
+![screenshot 2](./docs/screenshot2.png "screenshot 21")
+
+![screenshot 3](./docs/screenshot3.png "screenshot 3")
+
+![screenshot 4](./docs/screenshot4.png "screenshot 4")
+
+![screenshot 5](./docs/screenshot5.png "screenshot 5")
+
+![screenshot 6](./docs/screenshot6.png "screenshot 6")
+
+![screenshot 7](./docs/screenshot7.png "screenshot 7")
+
+![screenshot 8](./docs/screenshot8.png "screenshot 8")
+
+![screenshot 9](./docs/screenshot9.png "screenshot 9")
 
 
 # Setup
